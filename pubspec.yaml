@@ -1,0 +1,53 @@
+name: atomic_design
+description: Explain atomic design by reproducing the logistics website Figma template
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  collection: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/images/about/
+    - assets/images/blog/
+    - assets/images/button/
+    - assets/images/contacts/
+    - assets/images/projects/
+    - assets/images/services/
+    - assets/images/social/
+    - assets/images/team/
+    - assets/images/testimonials/
+    - assets/images/why_us/
+  fonts:
+    - family: Krub
+      fonts:
+        - asset: assets/fonts/Krub-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Krub-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Krub-SemiBold.ttf
+          weight: 600
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik-Regular.ttf
+        - asset: assets/fonts/Rubik-SemiBold.ttf
+          weight: 600
