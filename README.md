@@ -6,6 +6,8 @@ A practical example of how to apply atomic design in Flutter.
 
 - [Step 0: Start](#step-0-start) 
 - [Step 1: Setup Design library and showcase](#step-1-setup-design-library-and-showcase) 
+- [Step 2: Atom Button](#step-2-atom-button) 
+
 
 ## Step 0: Start
 
@@ -14,6 +16,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 1: Setup Design library and showcase
 - Setup the design library
 - Use [dashbook package](https://pub.dev/packages/dashbook) for the showcase of the design of the project
+
+## Step 2: Atom Button
+
+<img src="steps/step2.gif" alt="Step 2" title="Step 2" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

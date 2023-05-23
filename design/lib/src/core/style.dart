@@ -11,6 +11,7 @@ abstract class AppColors {
   static const headingFont = Color.fromARGB(255, 28, 31, 53);
   static const paragraphFont = Color.fromARGB(255, 102, 108, 137);
   static const buttonFont = Color.fromARGB(255, 35, 33, 42);
+  static const white = Colors.white;
   static const gradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
