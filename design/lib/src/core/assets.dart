@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'style.dart';
+
 abstract class Images {
   static const String _root = 'assets/images';
   static const String _jpg = '.jpg';
@@ -26,6 +28,7 @@ abstract class Images {
   static Image get blogImage3 => image('$_blog/image3$_png');
 
   static const String _button = '$_root/button';
+  static const buttonSize = Size(196, 60);
   static Image get buttonBg1 => image('$_button/button_bg1$_png');
   static Image get buttonBg1Hover => image('$_button/button_bg1_hover$_png');
   static Image get buttonBg2 => image('$_button/button_bg2$_png');
@@ -93,6 +96,7 @@ abstract class Images {
 
   static Image image(String path, {double? width, double? height}) =>
       Image.asset(
+        package: Style.packageName,
         path,
         width: width,
         height: height,

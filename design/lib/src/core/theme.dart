@@ -18,6 +18,7 @@ abstract class AppThemeData {
           headlineSmall: _headingFont(25, FontWeight.w500),
           bodyLarge: _headingFont(20, FontWeight.normal),
           bodyMedium: const TextStyle(
+            package: Style.packageName,
             fontFamily: _fontFamilyText,
             fontSize: 16,
             fontWeight: FontWeight.w500,
@@ -28,9 +29,27 @@ abstract class AppThemeData {
 
   static TextStyle _headingFont(double fontSize, FontWeight fontWeight) =>
       TextStyle(
+        package: Style.packageName,
         fontFamily: _fontFamilyHeading,
         fontSize: fontSize,
         fontWeight: fontWeight,
         color: AppColors.headingFont,
+      );
+}
+
+extension BuildContextExtensionForTextStyle on BuildContext {
+  TextStyle get displayLarge => Theme.of(this).textTheme.displayLarge!;
+  TextStyle get displayMedium => Theme.of(this).textTheme.displayMedium!;
+  TextStyle get displaySmall => Theme.of(this).textTheme.displaySmall!;
+  TextStyle get headlineLarge => Theme.of(this).textTheme.headlineLarge!;
+  TextStyle get headlineMedium => Theme.of(this).textTheme.headlineMedium!;
+  TextStyle get headlineSmall => Theme.of(this).textTheme.headlineSmall!;
+  TextStyle get bodyLarge => Theme.of(this).textTheme.bodyLarge!;
+  TextStyle get bodyMedium => Theme.of(this).textTheme.bodyMedium!;
+  TextStyle get quoteTextStyle =>
+      bodyMedium.copyWith(fontStyle: FontStyle.italic);
+  TextStyle get buttonTextStyle => bodyMedium.copyWith(
+        fontWeight: FontWeight.w600,
+        color: AppColors.buttonFont,
       );
 }

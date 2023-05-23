@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-abstract class Style {}
+abstract class Style {
+  static const packageName = 'design';
+}
 
 abstract class AppColors {
   static const primary1 = Color.fromARGB(255, 255, 190, 52);
@@ -8,6 +10,7 @@ abstract class AppColors {
   static const secondary = Color.fromARGB(255, 244, 244, 244);
   static const headingFont = Color.fromARGB(255, 28, 31, 53);
   static const paragraphFont = Color.fromARGB(255, 102, 108, 137);
+  static const buttonFont = Color.fromARGB(255, 35, 33, 42);
   static const gradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,

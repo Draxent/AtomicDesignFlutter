@@ -1,0 +1,51 @@
+name: design
+description: The package containing the design of the project
+version: 0.0.1
+
+environment:
+  sdk: '>=3.0.1 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/images/about/
+    - assets/images/blog/
+    - assets/images/button/
+    - assets/images/contacts/
+    - assets/images/projects/
+    - assets/images/services/
+    - assets/images/social/
+    - assets/images/team/
+    - assets/images/testimonials/
+    - assets/images/why_us/
+  fonts:
+    - family: Krub
+      fonts:
+        - asset: assets/fonts/Krub-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Krub-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Krub-SemiBold.ttf
+          weight: 600
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik-Regular.ttf
+        - asset: assets/fonts/Rubik-SemiBold.ttf
+          weight: 600

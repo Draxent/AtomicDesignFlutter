@@ -1,5 +1,5 @@
-name: atomic_design
-description: Explain atomic design by reproducing the logistics website Figma template
+name: showcase
+description: Showcase of the design of the project
 publish_to: 'none' 
 version: 1.0.0+1
 
@@ -9,15 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  collection: any
+  dashbook: ^0.1.12
   design:
-    path: ./design/
+    path: ../
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
