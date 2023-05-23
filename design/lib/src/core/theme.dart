@@ -52,4 +52,10 @@ extension BuildContextExtensionForTextStyle on BuildContext {
         fontWeight: FontWeight.w600,
         color: AppColors.buttonFont,
       );
+  TextStyle get inputTextStyle => const TextStyle(
+        package: Style.packageName,
+        fontFamily: 'LeagueSpartan',
+        fontSize: 20,
+        color: AppColors.white,
+      );
 }

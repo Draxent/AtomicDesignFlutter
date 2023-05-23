@@ -4,6 +4,7 @@ import 'package:dashbook/dashbook.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_heading.dart';
+import 'atoms/story_input.dart';
 
 class DashbookApp extends StatelessWidget {
   const DashbookApp({Key? key}) : super(key: key);
@@ -22,7 +23,8 @@ class DashbookApp extends StatelessWidget {
       )..storiesOf('Atoms')
           .decorator(centerDecorator)
           .add('Button', const StoryButton())
-          .add('Heading', const StoryHeading()),
+          .add('Heading', const StoryHeading())
+          .add('Input', const StoryInput()),
     );
   }
 }

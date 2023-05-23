@@ -25,6 +25,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 
 <img src="steps/step3.gif" alt="Step 3" title="Step 3" width="65%">
 
+## Step 4: Atom Input
+
+<img src="steps/step4.gif" alt="Step 4" title="Step 4" width="65%">
+
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [Developing packages & plugins](https://docs.flutter.dev/packages-and-plugins/developing-packages)

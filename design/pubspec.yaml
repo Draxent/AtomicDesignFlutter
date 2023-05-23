@@ -40,6 +40,9 @@ flutter:
           style: italic
         - asset: assets/fonts/Krub-SemiBold.ttf
           weight: 600
+    - family: LeagueSpartan
+      fonts:
+        - asset: assets/fonts/LeagueSpartan-Regular.ttf
     - family: Rubik
       fonts:
         - asset: assets/fonts/Rubik-Bold.ttf
