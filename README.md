@@ -8,6 +8,8 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 1: Setup Design library and showcase](#step-1-setup-design-library-and-showcase) 
 - [Step 2: Atom Button](#step-2-atom-button) 
 - [Step 3: Atom Heading](#step-3-atom-heading) 
+- [Step 4: Atom Input](#step-4-atom-input) 
+- [Step 5: Atom Social Info](#step-5-atom-social-info) 
 
 ## Step 0: Start
 
@@ -28,6 +30,11 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 4: Atom Input
 
 <img src="steps/step4.gif" alt="Step 4" title="Step 4" width="65%">
+
+## Step 5: Atom Social Info
+
+<img src="steps/step5.gif" alt="Step 5" title="Step 5" width="65%">
+
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

@@ -6,12 +6,11 @@ extension DashbookContextExtension on DashbookContext {
 
   T enumProperty<T extends Enum>(
     String name,
-    T defaultValue,
     List<T> values,
   ) =>
       optionsProperty<T>(
         name,
-        defaultValue,
+        values.first,
         values.map((x) => PropertyOption(x.name, x)).toList(growable: false),
       );
 }

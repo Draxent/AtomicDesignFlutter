@@ -11,16 +11,11 @@ class StoryInput implements StoryWidget {
   @override
   Widget call(DashbookContext context) {
     return StoryScaffold(
-      child: ColoredBox(
-        color: AppColors.primary2,
-        child: Padding(
-          padding: const EdgeInsets.all(30),
-          child: Input(
-            hintText: context.textProperty('Hint', 'Email'),
-            isRequired: context.boolProperty('Is required?', true),
-            numLines: context.intProperty('Number of lines', 1),
-          ),
-        ),
+      withBlueBox: true,
+      child: Input(
+        hintText: context.textProperty('Hint', 'Email'),
+        isRequired: context.boolProperty('Is required?', true),
+        numLines: context.intProperty('Number of lines', 1),
       ),
     );
   }

@@ -13,8 +13,7 @@ class StoryButton implements StoryWidget {
     return StoryScaffold(
       child: Button(
         text: context.textProperty('Text', 'Text'),
-        color: context.enumProperty<ButtonColor>(
-            'Color', ButtonColor.orange, ButtonColor.values),
+        color: context.enumProperty<ButtonColor>('Color', ButtonColor.values),
         onPressed: () {},
       ),
     );
