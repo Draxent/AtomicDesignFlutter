@@ -10,6 +10,7 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 3: Atom Heading](#step-3-atom-heading) 
 - [Step 4: Atom Input](#step-4-atom-input) 
 - [Step 5: Atom Social Info](#step-5-atom-social-info) 
+- [Step 6: Atom Menu](#step-6-atom-menu) 
 
 ## Step 0: Start
 
@@ -35,6 +36,9 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 
 <img src="steps/step5.gif" alt="Step 5" title="Step 5" width="65%">
 
+## Step 6: Atom Menu
+
+<img src="steps/step6.gif" alt="Step 6" title="Step 6" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

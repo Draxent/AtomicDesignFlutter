@@ -8,6 +8,7 @@ abstract class Images {
   static const String _png = '.png';
 
   static Image get bannerBg => image('$_root/banner_bg$_jpg');
+  static Image get chevronDown => image('$_root/chevron_down$_png');
   static Image get menuBg => image('$_root/menu_bg$_jpg');
   static Image get footerBg => image('$_root/footer_bg$_jpg');
   static Image get logo => image('$_root/logo$_png');
