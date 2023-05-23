@@ -11,12 +11,14 @@ class MyApp extends StatelessWidget {
       title: 'Atomic Design',
       theme: AppThemeData.theme,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Atomic Design'),
-        ),
-        body: Button(
-          text: 'Some Text',
-          onPressed: () {},
+        body: Column(
+          children: [
+            const MenuHeader(),
+            Button(
+              text: 'Some Text',
+              onPressed: () {},
+            ),
+          ],
         ),
       ),
     );

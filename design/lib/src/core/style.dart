@@ -31,10 +31,12 @@ abstract class Space {
   static const vS = SizedBox(height: 8);
   static const vM = SizedBox(height: 12);
   static const vL = SizedBox(height: 22);
-  static const vXL = SizedBox(height: 65);
+  static const vXL = SizedBox(height: 40);
+  static const vXXL = SizedBox(height: 65);
 
   static const hS = SizedBox(width: 8);
   static const hM = SizedBox(width: 12);
   static const hL = SizedBox(width: 22);
-  static const hXL = SizedBox(width: 65);
+  static const hXL = SizedBox(width: 40);
+  static const hXXL = SizedBox(width: 65);
 }
