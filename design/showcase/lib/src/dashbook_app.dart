@@ -2,7 +2,8 @@ import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
 
-import 'atoms/dashbook_story_button.dart';
+import 'atoms/story_button.dart';
+import 'atoms/story_heading.dart';
 
 class DashbookApp extends StatelessWidget {
   const DashbookApp({Key? key}) : super(key: key);
@@ -20,7 +21,8 @@ class DashbookApp extends StatelessWidget {
         title: 'Showcase',
       )..storiesOf('Atoms')
           .decorator(centerDecorator)
-          .add('Button', const DashbookStoryButton()),
+          .add('Button', const StoryButton())
+          .add('Heading', const StoryHeading()),
     );
   }
 }

@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import '../dashbook_story.dart';
 import '../dashbook_utils.dart';
 
-class DashbookStoryButton implements StoryWidget {
-  const DashbookStoryButton();
+class StoryButton implements StoryWidget {
+  const StoryButton();
 
   @override
   Widget call(DashbookContext context) {

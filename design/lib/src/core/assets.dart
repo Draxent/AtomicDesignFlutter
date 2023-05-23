@@ -11,6 +11,7 @@ abstract class Images {
   static Image get menuBg => image('$_root/menu_bg$_jpg');
   static Image get footerBg => image('$_root/footer_bg$_jpg');
   static Image get logo => image('$_root/logo$_png');
+  static double titleStartHeight = 23;
   static Image get titleStart => image('$_root/title_start$_png');
 
   static const String _about = '$_root/about';

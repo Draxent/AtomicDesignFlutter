@@ -19,7 +19,7 @@ class StoryScaffold extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(30),
             child: Center(child: child),
           ),
         ),
