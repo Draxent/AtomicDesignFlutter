@@ -15,7 +15,7 @@ class Heading extends StatelessWidget {
   final bool isMainHeading;
 
   TextStyle _textStyleWithColor(TextStyle textStyle) =>
-      textStyle.copyWith(color: isMainHeading ? AppColors.white : null);
+      isMainHeading ? textStyle.white : textStyle;
 
   @override
   Widget build(BuildContext context) {

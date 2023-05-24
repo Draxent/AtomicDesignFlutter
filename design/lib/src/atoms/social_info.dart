@@ -35,7 +35,7 @@ class SocialInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = context.bodyMedium.copyWith(color: AppColors.white);
+    final textStyle = context.bodyMedium.white;
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [

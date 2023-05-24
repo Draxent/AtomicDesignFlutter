@@ -42,7 +42,7 @@ class _ButtonState extends State<Button> {
       case ButtonColor.orange:
         return context.buttonTextStyle;
       case ButtonColor.blue:
-        return context.buttonTextStyle.copyWith(color: AppColors.white);
+        return context.buttonTextStyle.white;
     }
   }
 

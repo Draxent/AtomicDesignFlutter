@@ -45,6 +45,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 
 <img src="steps/step7.jpg" alt="Step 7" title="Step 7" width="65%">
 
+## Step 8: Page Section Banner
+
+<img src="steps/step8.jpg" alt="Step 8" title="Step 8" width="65%">
+
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [Developing packages & plugins](https://docs.flutter.dev/packages-and-plugins/developing-packages)

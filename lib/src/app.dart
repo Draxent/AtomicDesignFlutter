@@ -1,6 +1,8 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 
+import './homepage.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -10,15 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Atomic Design',
       theme: AppThemeData.theme,
-      home: Scaffold(
-        body: Column(
-          children: [
-            const MenuHeader(),
-            Button(
-              text: 'Some Text',
-              onPressed: () {},
-            ),
-          ],
+      home: const Scaffold(
+        body: SingleChildScrollView(
+          child: HomePage(),
         ),
       ),
     );

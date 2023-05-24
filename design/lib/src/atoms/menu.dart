@@ -72,10 +72,7 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final style = context.bodyMedium.copyWith(
-      color: AppColors.white,
-      fontWeight: FontWeight.w600,
-    );
+    final style = context.bodyMedium.white.semiBold;
     return SizedBox(
       height: Menu.height,
       child: Row(
