@@ -9,6 +9,7 @@ import 'atoms/story_menu.dart';
 import 'atoms/story_social_info.dart';
 import 'atoms/story_stars.dart';
 import 'atoms/story_user.dart';
+import 'molecules/story_form.dart';
 import 'molecules/story_review.dart';
 import 'organisms/story_menu_header.dart';
 
@@ -38,6 +39,7 @@ class DashbookApp extends StatelessWidget {
               .add('User', const StoryUser())
           ..storiesOf('Molecules')
               .decorator(centerDecorator)
+              .add('Form', const StoryForm())
               .add('Review', const StoryReview())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)

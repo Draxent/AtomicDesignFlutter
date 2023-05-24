@@ -1,9 +1,9 @@
 import 'package:dashbook/dashbook.dart';
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
-import 'package:showcase/src/dashbook_utils.dart';
 
 import '../dashbook_story.dart';
+import '../dashbook_utils.dart';
 
 class StoryReview implements StoryWidget {
   const StoryReview();
