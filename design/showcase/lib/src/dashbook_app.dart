@@ -1,13 +1,14 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
-import 'package:showcase/src/atoms/story_stars.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_heading.dart';
 import 'atoms/story_input.dart';
 import 'atoms/story_menu.dart';
 import 'atoms/story_social_info.dart';
+import 'atoms/story_stars.dart';
+import 'atoms/story_user.dart';
 import 'organisms/story_menu_header.dart';
 
 class DashbookApp extends StatelessWidget {
@@ -33,6 +34,7 @@ class DashbookApp extends StatelessWidget {
               .add('Menu', const StoryMenu())
               .add('Social Info', const StorySocialInfo())
               .add('Stars', const StoryStars())
+              .add('User', const StoryUser())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)
               .add('Menu Header', const StoryMenuHeader()));
