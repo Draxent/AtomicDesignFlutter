@@ -12,6 +12,8 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 5: Atom Social Info](#step-5-atom-social-info) 
 - [Step 6: Atom Menu](#step-6-atom-menu) 
 - [Step 7: Organism Menu Header](#step-7-organism-menu-header) 
+- [Step 8: Page Section Banner](#step-8-page-section-banner) 
+- [Step 9: Atom Stars](#step-9-atom-stars) 
 
 ## Step 0: Start
 
@@ -48,6 +50,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 8: Page Section Banner
 
 <img src="steps/step8.jpg" alt="Step 8" title="Step 8" width="65%">
+
+## Step 9: Atom Stars
+
+<img src="steps/step9.gif" alt="Step 9" title="Step 9" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

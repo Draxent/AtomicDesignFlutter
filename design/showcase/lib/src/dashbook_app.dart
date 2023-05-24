@@ -1,6 +1,7 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
+import 'package:showcase/src/atoms/story_stars.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_heading.dart';
@@ -31,6 +32,7 @@ class DashbookApp extends StatelessWidget {
               .add('Input', const StoryInput())
               .add('Menu', const StoryMenu())
               .add('Social Info', const StorySocialInfo())
+              .add('Stars', const StoryStars())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)
               .add('Menu Header', const StoryMenuHeader()));
