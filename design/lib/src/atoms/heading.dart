@@ -14,9 +14,6 @@ class Heading extends StatelessWidget {
   final String heading;
   final bool isMainHeading;
 
-  TextStyle _textStyleWithColor(TextStyle textStyle) =>
-      isMainHeading ? textStyle.white : textStyle;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -36,8 +33,9 @@ class Heading extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Text(
                   title,
-                  style: _textStyleWithColor(
-                      context.bodyLarge.copyWith(fontSize: 14)),
+                  style: context.bodyLarge
+                      .copyWith(fontSize: 14)
+                      .maybeWhite(isMainHeading),
                 ),
               ),
             ),
@@ -45,8 +43,9 @@ class Heading extends StatelessWidget {
         ),
         Text(
           heading,
-          style: _textStyleWithColor(
-              isMainHeading ? context.displayLarge : context.headlineLarge),
+          style: isMainHeading
+              ? context.displayLarge.white
+              : context.headlineLarge,
         ),
       ],
     );

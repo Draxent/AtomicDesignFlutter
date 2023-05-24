@@ -9,6 +9,7 @@ import 'atoms/story_menu.dart';
 import 'atoms/story_social_info.dart';
 import 'atoms/story_stars.dart';
 import 'atoms/story_user.dart';
+import 'molecules/story_review.dart';
 import 'organisms/story_menu_header.dart';
 
 class DashbookApp extends StatelessWidget {
@@ -35,6 +36,9 @@ class DashbookApp extends StatelessWidget {
               .add('Social Info', const StorySocialInfo())
               .add('Stars', const StoryStars())
               .add('User', const StoryUser())
+          ..storiesOf('Molecules')
+              .decorator(centerDecorator)
+              .add('Review', const StoryReview())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)
               .add('Menu Header', const StoryMenuHeader()));

@@ -7,12 +7,14 @@ class User extends StatelessWidget {
     required this.image,
     required this.name,
     required this.company,
+    this.isWhiteText = false,
     super.key,
   });
 
   final Image image;
   final String name;
   final String company;
+  final bool isWhiteText;
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +27,8 @@ class User extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(name, style: context.bodyLarge),
-            Text(company),
+            Text(name, style: context.bodyLarge.maybeWhite(isWhiteText)),
+            Text(company, style: context.bodyMedium.maybeWhite(isWhiteText)),
           ],
         )
       ],
