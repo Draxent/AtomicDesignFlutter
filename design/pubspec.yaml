@@ -25,6 +25,7 @@ flutter:
     - assets/images/blog/
     - assets/images/button/
     - assets/images/contacts/
+    - assets/images/icons/
     - assets/images/projects/
     - assets/images/services/
     - assets/images/social/

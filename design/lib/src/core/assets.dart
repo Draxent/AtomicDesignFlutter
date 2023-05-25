@@ -17,8 +17,6 @@ abstract class Images {
 
   static const String _about = '$_root/about';
   static Image get aboutBg => image('$_about/about_bg$_jpg');
-  static Image get aboutIcon1 => image('$_about/about_icon1$_png');
-  static Image get aboutIcon2 => image('$_about/about_icon2$_png');
   static Image get aboutImage1 => image('$_about/image1$_jpg');
   static Image get aboutImage2 => image('$_about/image2$_jpg');
   static Image get aboutSeparator => image('$_about/separator$_png');
@@ -45,6 +43,9 @@ abstract class Images {
   static Image get contactsClientLogo3 => image('$_contacts/client_logo3$_png');
   static Image get contactsClientImg4 => image('$_contacts/client_img4$_png');
   static Image get contactsClientLogo4 => image('$_contacts/client_logo4$_png');
+
+  static const String _icons = '$_root/icons';
+  static Image icon(String name) => image('$_icons/$name$_png');
 
   static const String _projects = '$_root/projects';
   static Image get project1 => image('$_projects/project1$_png');
@@ -86,12 +87,6 @@ abstract class Images {
   static Image get testimonialsUser2 => image('$_testimonials/user2$_png');
 
   static const String _whyUs = '$_root/why_us';
-  static Image get whyUsIcon1 => image('$_whyUs/icon1$_png');
-  static Image get whyUsIcon2 => image('$_whyUs/icon2$_png');
-  static Image get whyUsIcon3 => image('$_whyUs/icon3$_png');
-  static Image get whyUsIcon4 => image('$_whyUs/icon4$_png');
-  static Image get whyUsIcon5 => image('$_whyUs/icon5$_png');
-  static Image get whyUsIcon6 => image('$_whyUs/icon6$_png');
   static Image get whyUsImage => image('$_whyUs/image$_png');
   static Image get whyUsTagBg => image('$_whyUs/tag_bg$_png');
   static Image get whyUsTagIcon => image('$_whyUs/tag_icon$_png');

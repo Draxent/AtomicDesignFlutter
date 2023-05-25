@@ -1,6 +1,7 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
+import 'package:showcase/src/atoms/story_icon_text.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_heading.dart';
@@ -32,6 +33,7 @@ class DashbookApp extends StatelessWidget {
               .decorator(centerDecorator)
               .add('Button', const StoryButton())
               .add('Heading', const StoryHeading())
+              .add('IconText', const StoryIconText())
               .add('Input', const StoryInput())
               .add('Menu', const StoryMenu())
               .add('Social Info', const StorySocialInfo())
