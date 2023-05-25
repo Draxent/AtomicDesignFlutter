@@ -18,6 +18,7 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 11: Molecule Review](#step-11-molecule-review) 
 - [Step 12: Molecule Form](#step-12-molecule-form) 
 - [Step 13: Atom Icon-Text](#step-13-atom-icon-text) 
+- [Step 14: Atom Project-Image](#step-14-atom-project-image) 
 
 ## Step 0: Start
 
@@ -74,6 +75,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 13: Atom Icon-Text
 
 <img src="steps/step13.gif" alt="Step 13" title="Step 13" width="65%">
+
+## Step 14: Atom Project-Image
+
+<img src="steps/step14.gif" alt="Step 14" title="Step 14" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)
