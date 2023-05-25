@@ -1,4 +1,5 @@
 export './button.dart';
+export './client.dart';
 export './heading.dart';
 export './icon_text.dart';
 export './input.dart';
