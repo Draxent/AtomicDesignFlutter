@@ -1,19 +1,20 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
-import 'package:showcase/src/atoms/story_icon_text.dart';
-import 'package:showcase/src/atoms/story_project_image.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_heading.dart';
+import 'atoms/story_icon_text.dart';
 import 'atoms/story_input.dart';
 import 'atoms/story_menu.dart';
+import 'atoms/story_project_image.dart';
 import 'atoms/story_social_info.dart';
 import 'atoms/story_social_links.dart';
 import 'atoms/story_stars.dart';
 import 'atoms/story_user.dart';
 import 'molecules/story_form.dart';
 import 'molecules/story_review.dart';
+import 'molecules/story_team_member.dart';
 import 'organisms/story_menu_header.dart';
 
 class DashbookApp extends StatelessWidget {
@@ -47,6 +48,7 @@ class DashbookApp extends StatelessWidget {
               .decorator(centerDecorator)
               .add('Form', const StoryForm())
               .add('Review', const StoryReview())
+              .add('TeamMember', const StoryTeamMember())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)
               .add('Menu Header', const StoryMenuHeader()));

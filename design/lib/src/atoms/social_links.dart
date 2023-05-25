@@ -25,18 +25,25 @@ extension SocialLinkTypeExtension on SocialLinkType {
   }
 }
 
+typedef SocialLinksData = Map<SocialLinkType, String>;
+typedef SocialLinkData = MapEntry<SocialLinkType, String>;
+
 class SocialLinks extends StatelessWidget {
   const SocialLinks({
     required this.links,
     super.key,
   });
 
-  final Map<SocialLinkType, String> links;
+  final SocialLinksData links;
+
+  static const height = Images.social2Height + 2 * _verticalPadding;
+  static const _verticalPadding = 20.0;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
+      padding: const EdgeInsets.symmetric(
+          horizontal: 17, vertical: _verticalPadding),
       decoration: const BoxDecoration(gradient: AppColors.gradient),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -55,7 +62,7 @@ class _SocialLink extends StatelessWidget {
   });
 
   final bool isFirst;
-  final MapEntry<SocialLinkType, String> link;
+  final SocialLinkData link;
 
   @override
   Widget build(BuildContext context) {

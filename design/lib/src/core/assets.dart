@@ -61,6 +61,7 @@ abstract class Images {
   static Image get service4 => image('$_services/service4$_png');
 
   static const String _social = '$_root/social';
+  static const social2Height = 23.0;
   static Image get socialCall => image('$_social/call$_png');
   static Image get socialEmail => image('$_social/email$_png');
   static Image get socialFacebook => image('$_social/facebook$_png');
