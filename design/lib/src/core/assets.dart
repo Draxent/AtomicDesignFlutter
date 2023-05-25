@@ -68,6 +68,7 @@ abstract class Images {
   static Image get socialInstagram => image('$_social/instagram$_png');
   static Image get socialInstagram2 => image('$_social/instagram2$_png');
   static Image get socialLinkdin => image('$_social/linkdin$_png');
+  static Image get socialLinkdin2 => image('$_social/linkdin2$_png');
   static Image get socialTime => image('$_social/time$_png');
   static Image get socialTwitter => image('$_social/twitter$_png');
   static Image get socialTwitter2 => image('$_social/twitter2$_png');

@@ -5,5 +5,6 @@ export './input.dart';
 export './menu.dart';
 export './project_image.dart';
 export './social_info.dart';
+export './social_links.dart';
 export './stars.dart';
 export './user.dart';
