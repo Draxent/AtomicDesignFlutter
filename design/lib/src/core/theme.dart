@@ -25,6 +25,7 @@ abstract class AppThemeData {
             color: AppColors.paragraphFont,
           ),
         ),
+        dividerColor: AppColors.divider,
       );
 
   static TextStyle _headingFont(double fontSize, FontWeight fontWeight) =>

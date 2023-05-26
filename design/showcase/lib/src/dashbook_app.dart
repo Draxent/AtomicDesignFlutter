@@ -16,6 +16,7 @@ import 'atoms/story_social_links.dart';
 import 'atoms/story_stars.dart';
 import 'atoms/story_user.dart';
 import 'molecules/story_form.dart';
+import 'molecules/story_news.dart';
 import 'molecules/story_review.dart';
 import 'molecules/story_team_member.dart';
 import 'organisms/story_menu_header.dart';
@@ -53,6 +54,7 @@ class DashbookApp extends StatelessWidget {
           ..storiesOf('Molecules')
               .decorator(centerDecorator)
               .add('Form', const StoryForm())
+              .add('News', const StoryNews())
               .add('Review', const StoryReview())
               .add('Team Member', const StoryTeamMember())
           ..storiesOf('Organisms')

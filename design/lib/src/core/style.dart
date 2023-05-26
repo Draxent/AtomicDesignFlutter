@@ -14,6 +14,7 @@ abstract class AppColors {
   static const headingTitle = Color.fromARGB(127, 232, 232, 232);
   static const headingMainTitle = Color.fromARGB(127, 4, 28, 55);
   static const inputDecorationBorder = Color.fromARGB(255, 78, 86, 131);
+  static const divider = Color.fromARGB(255, 214, 214, 214);
 
   static const white = Colors.white;
   static const gradient = LinearGradient(

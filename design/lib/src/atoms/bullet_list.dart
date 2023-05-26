@@ -16,6 +16,7 @@ class BulletList extends StatelessWidget {
   Widget build(BuildContext context) {
     final style = context.bodyMedium.black;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: list
           .map((e) => Text('$symbol $e', style: style))
