@@ -4,6 +4,7 @@ import 'package:dashbook/dashbook.dart';
 
 import 'atoms/story_button.dart';
 import 'atoms/story_client.dart';
+import 'atoms/story_date_view.dart';
 import 'atoms/story_heading.dart';
 import 'atoms/story_icon_text.dart';
 import 'atoms/story_input.dart';
@@ -37,6 +38,7 @@ class DashbookApp extends StatelessWidget {
               .decorator(centerDecorator)
               .add('Button', const StoryButton())
               .add('Client', const StoryClient())
+              .add('DateView', const StoryDateView())
               .add('Heading', const StoryHeading())
               .add('IconText', const StoryIconText())
               .add('Input', const StoryInput())
