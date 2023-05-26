@@ -2,6 +2,7 @@ import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 
 import './banner.dart';
+import './services.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
       children: [
         MenuHeader(),
         SectionBanner(),
+        SectionServices(),
       ],
     );
   }
