@@ -2,6 +2,7 @@ import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 import 'package:dashbook/dashbook.dart';
 
+import 'atoms/story_bullet_list.dart';
 import 'atoms/story_button.dart';
 import 'atoms/story_client.dart';
 import 'atoms/story_date_view.dart';
@@ -36,14 +37,15 @@ class DashbookApp extends StatelessWidget {
         )
           ..storiesOf('Atoms')
               .decorator(centerDecorator)
+              .add('Bullet List', const StoryBulletList())
               .add('Button', const StoryButton())
               .add('Client', const StoryClient())
-              .add('DateView', const StoryDateView())
+              .add('Date View', const StoryDateView())
               .add('Heading', const StoryHeading())
-              .add('IconText', const StoryIconText())
+              .add('Icon-Text', const StoryIconText())
               .add('Input', const StoryInput())
               .add('Menu', const StoryMenu())
-              .add('ProjectImage', const StoryProjectImage())
+              .add('Project Image', const StoryProjectImage())
               .add('Social Info', const StorySocialInfo())
               .add('Social Links', const StorySocialLinks())
               .add('Stars', const StoryStars())
@@ -52,7 +54,7 @@ class DashbookApp extends StatelessWidget {
               .decorator(centerDecorator)
               .add('Form', const StoryForm())
               .add('Review', const StoryReview())
-              .add('TeamMember', const StoryTeamMember())
+              .add('Team Member', const StoryTeamMember())
           ..storiesOf('Organisms')
               .decorator(centerDecorator)
               .add('Menu Header', const StoryMenuHeader()));

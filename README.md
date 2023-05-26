@@ -23,6 +23,7 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 16: Molecule Team Member](#step-16-molecule-team-member) 
 - [Step 17: Atom Client](#step-17-atom-client) 
 - [Step 18: Atom Date View](#step-18-atom-date-view) 
+- [Step 19: Atom Bullet List](#step-19-atom-bullet-list) 
 
 ## Step 0: Start
 
@@ -99,6 +100,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 18: Atom Date View
 
 <img src="steps/step18.gif" alt="Step 18" title="Step 18" width="65%">
+
+## Step 19: Atom Bullet List
+
+<img src="steps/step19.gif" alt="Step 19" title="Step 19" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

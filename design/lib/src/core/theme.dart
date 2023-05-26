@@ -62,6 +62,7 @@ extension BuildContextExtensionForTextStyle on BuildContext {
 
 extension TextStyleExtension on TextStyle {
   TextStyle get white => copyWith(color: AppColors.white);
+  TextStyle get black => copyWith(color: AppColors.headingFont);
   TextStyle get primary1 => copyWith(color: AppColors.primary1);
   TextStyle get semiBold => copyWith(fontWeight: FontWeight.w600);
 
