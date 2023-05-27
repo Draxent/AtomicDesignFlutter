@@ -5,6 +5,7 @@ import './about.dart';
 import './banner.dart';
 import './projects.dart';
 import './services.dart';
+import './testimonials.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -17,9 +18,11 @@ class HomePage extends StatelessWidget {
         SectionBanner(),
         SectionServices(),
         SectionAbout(),
-        SizedBox(height: 100),
+        Space.vXXXL,
         SectionProjects(),
-        SizedBox(height: 50),
+        Space.vXXXL,
+        SectionTestimonials(),
+        Space.vXL,
       ],
     );
   }
