@@ -23,7 +23,8 @@ class SectionBanner extends StatelessWidget {
                     const Heading(
                       title: 'Logistics & Supply Chain Solutions',
                       heading: 'Your Gateway to any Destination in the World',
-                      isMainHeading: true,
+                      isBig: true,
+                      isWhite: true,
                     ),
                     Space.vM,
                     Text(

@@ -22,14 +22,16 @@ class Heading extends StatelessWidget {
   const Heading({
     required this.title,
     required this.heading,
-    this.isMainHeading = false,
+    this.isBig = false,
+    this.isWhite = false,
     this.alignment = HeadingAlignment.start,
     super.key,
   });
 
   final String title;
   final String heading;
-  final bool isMainHeading;
+  final bool isBig;
+  final bool isWhite;
   final HeadingAlignment alignment;
 
   @override
@@ -44,16 +46,15 @@ class Heading extends StatelessWidget {
             Images.titleStart,
             Container(
               height: Images.titleStartHeight,
-              color: isMainHeading
-                  ? AppColors.headingMainTitle
-                  : AppColors.headingTitle,
+              color:
+                  isWhite ? AppColors.headingMainTitle : AppColors.headingTitle,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Text(
                   title,
                   style: context.bodyLarge
                       .copyWith(fontSize: 14)
-                      .maybeWhite(isMainHeading),
+                      .maybeWhite(isWhite),
                 ),
               ),
             ),
@@ -61,9 +62,8 @@ class Heading extends StatelessWidget {
         ),
         Text(
           heading,
-          style: isMainHeading
-              ? context.displayLarge.white
-              : context.headlineLarge,
+          style: (isBig ? context.displayLarge : context.headlineLarge)
+              .maybeWhite(isWhite),
         ),
       ],
     );

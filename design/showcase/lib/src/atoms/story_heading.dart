@@ -10,17 +10,16 @@ class StoryHeading implements StoryWidget {
 
   @override
   Widget call(DashbookContext context) {
-    final isMainHeading = context.boolProperty('Is main heading?', false);
+    final isWhite = context.boolProperty('Is White?', false);
     return StoryScaffold(
-      child: ColoredBox(
-        color: isMainHeading ? Colors.blue : Colors.white,
-        child: Heading(
-          title: context.textProperty('Category text', 'What We Do'),
-          heading:
-              context.textProperty('Text', 'Safe & Reliable Cargo Solutions'),
-          isMainHeading: isMainHeading,
-          alignment: context.enumProperty('Alignment', HeadingAlignment.values),
-        ),
+      withBlueBox: isWhite,
+      child: Heading(
+        title: context.textProperty('Category text', 'What We Do'),
+        heading:
+            context.textProperty('Text', 'Safe & Reliable Cargo Solutions'),
+        isWhite: isWhite,
+        isBig: context.boolProperty('Is Big?', false),
+        alignment: context.enumProperty('Alignment', HeadingAlignment.values),
       ),
     );
   }

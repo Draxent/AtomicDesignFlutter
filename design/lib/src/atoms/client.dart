@@ -12,18 +12,15 @@ class Client extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
-      fit: BoxFit.scaleDown,
-      child: Stack(
-        children: [
-          background,
-          Positioned.fill(
-            child: Center(
-              child: logo,
-            ),
+    return Stack(
+      children: [
+        background,
+        Positioned.fill(
+          child: Center(
+            child: logo,
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

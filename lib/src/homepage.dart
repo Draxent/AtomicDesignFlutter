@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import './about.dart';
 import './banner.dart';
+import './contacts.dart';
 import './projects.dart';
 import './services.dart';
 import './team.dart';
@@ -24,10 +25,12 @@ class HomePage extends StatelessWidget {
         SectionProjects(),
         Space.vXXXL,
         SectionTestimonials(),
-        Space.vXL,
+        Space.vXXXL,
         SectionWhyUs(),
-        Space.vXL,
+        Space.vXXXL,
         SectionTeam(),
+        Space.vXXXL,
+        SectionContacts(),
         Space.vXL,
       ],
     );
