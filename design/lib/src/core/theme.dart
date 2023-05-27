@@ -8,7 +8,10 @@ abstract class AppThemeData {
 
   static ThemeData get theme => ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary2),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.primary2,
+          background: AppColors.white,
+        ),
         textTheme: TextTheme(
           displayLarge: _headingFont(60, FontWeight.bold),
           displayMedium: _headingFont(50, FontWeight.w600),

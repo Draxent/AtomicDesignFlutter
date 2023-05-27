@@ -16,6 +16,8 @@ abstract class Images {
   static Image get titleStart => image('$_root/title_start$_png');
 
   static const String _about = '$_root/about';
+  static const aboutImage1Width = 461.0;
+  static const aboutImage1Height = 415.0;
   static Image get aboutBg => image('$_about/about_bg$_jpg');
   static Image get aboutImage1 => image('$_about/image1$_jpg');
   static Image get aboutImage2 => image('$_about/image2$_jpg');

@@ -1,6 +1,7 @@
 import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 
+import './about.dart';
 import './banner.dart';
 import './services.dart';
 
@@ -14,6 +15,8 @@ class HomePage extends StatelessWidget {
         MenuHeader(),
         SectionBanner(),
         SectionServices(),
+        SectionAbout(),
+        SizedBox(height: 50),
       ],
     );
   }

@@ -26,6 +26,7 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 19: Atom Bullet List](#step-19-atom-bullet-list) 
 - [Step 20: Molecule News](#step-20-molecule-news) 
 - [Step 21: Page Section Services](#step-21-page-section-services) 
+- [Step 22: Page Section About - Part 1](#step-22-page-section-about---part-1) 
 
 ## Step 0: Start
 
@@ -114,6 +115,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 21: Page Section Services
 
 <img src="steps/step21.jpg" alt="Step 21" title="Step 21" width="65%">
+
+## Step 22: Page Section About - Part 1
+
+<img src="steps/step22.jpg" alt="Step 22" title="Step 22" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)
