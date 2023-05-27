@@ -5,6 +5,7 @@ import './about.dart';
 import './banner.dart';
 import './projects.dart';
 import './services.dart';
+import './team.dart';
 import './testimonials.dart';
 import './why_us.dart';
 
@@ -25,6 +26,8 @@ class HomePage extends StatelessWidget {
         SectionTestimonials(),
         Space.vXL,
         SectionWhyUs(),
+        Space.vXL,
+        SectionTeam(),
         Space.vXL,
       ],
     );

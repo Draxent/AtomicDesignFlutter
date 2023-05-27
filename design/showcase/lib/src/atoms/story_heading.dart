@@ -3,6 +3,7 @@ import 'package:design/design.dart';
 import 'package:flutter/material.dart';
 
 import '../dashbook_story.dart';
+import '../dashbook_utils.dart';
 
 class StoryHeading implements StoryWidget {
   const StoryHeading();
@@ -18,6 +19,7 @@ class StoryHeading implements StoryWidget {
           heading:
               context.textProperty('Text', 'Safe & Reliable Cargo Solutions'),
           isMainHeading: isMainHeading,
+          alignment: context.enumProperty('Alignment', HeadingAlignment.values),
         ),
       ),
     );
