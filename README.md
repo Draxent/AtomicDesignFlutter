@@ -33,6 +33,7 @@ A practical example of how to apply atomic design in Flutter.
 - [Step 26: Page Section Why Us](#step-26-page-section-why-us) 
 - [Step 27: Page Section Team](#step-27-page-section-team) 
 - [Step 28: Page Section Contacts](#step-28-page-section-contacts) 
+- [Step 29: Page Section Blog](#step-29-page-section-blog) 
 
 ## Step 0: Start
 
@@ -149,6 +150,10 @@ Start the project from **step-0** by downloading [this file](steps/step0.zip) an
 ## Step 28: Page Section Contacts
 
 <img src="steps/step28.jpg" alt="Step 28" title="Step 28" width="65%">
+
+## Step 29: Page Section Blog
+
+<img src="steps/step29.jpg" alt="Step 29" title="Step 29" width="65%">
 
 ## Links
 - [Read more about atomic design](https://atomicdesign.bradfrost.com/chapter-2/)

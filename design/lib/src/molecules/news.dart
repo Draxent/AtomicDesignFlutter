@@ -46,7 +46,12 @@ class News extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(title, style: context.headlineSmall),
+                    Text(
+                      title,
+                      style: isOrangeTitle
+                          ? context.headlineSmall.primary1
+                          : context.headlineSmall,
+                    ),
                     Text(content),
                     BulletList(list: bulletList),
                   ],

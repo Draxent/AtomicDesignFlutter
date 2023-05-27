@@ -28,6 +28,7 @@ class StoryNews implements StoryWidget {
           'Reliable & experienced staffs',
         ],
         date: DateTime(2023, 9, 8),
+        isOrangeTitle: context.boolProperty('Is Orange Title?', false),
       ),
     );
   }
