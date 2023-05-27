@@ -11,23 +11,26 @@ class SectionAbout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Stack(
-          children: [
-            _SectionAboutBackground(),
-            Positioned.fill(
-              bottom: contentPositionBottom,
-              child: Align(
-                alignment: Alignment.bottomCenter,
-                child: _SectionAboutContent(),
+    return const FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Stack(
+            children: [
+              _SectionAboutBackground(),
+              Positioned.fill(
+                bottom: contentPositionBottom,
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: _SectionAboutContent(),
+                ),
               ),
-            ),
-          ],
-        ),
-        _SectionAboutCounter(),
-      ],
+            ],
+          ),
+          _SectionAboutCounter(),
+        ],
+      ),
     );
   }
 }
@@ -39,9 +42,53 @@ class _SectionAboutCounter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return Container(
       height: height,
-      child: Placeholder(),
+      padding: const EdgeInsets.symmetric(horizontal: 50),
+      decoration: const BoxDecoration(
+        border:
+            Border.symmetric(horizontal: BorderSide(color: AppColors.divider)),
+      ),
+      child: const Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _Counter(
+            count: 1294,
+            text: 'Delivered Packages',
+          ),
+          SizedBox(width: 114),
+          VerticalDivider(),
+          SizedBox(width: 114),
+          _Counter(
+            count: 3594,
+            text: 'Satisfied Clients',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Counter extends StatelessWidget {
+  const _Counter({
+    required this.count,
+    required this.text,
+  });
+
+  final int count;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(count.toString(), style: context.displayMedium),
+        Space.hM,
+        Images.aboutSeparator,
+        Space.hM,
+        Text(text, style: context.aboutCounterTextStyle),
+      ],
     );
   }
 }
@@ -103,7 +150,35 @@ class _SectionAboutContentText extends StatelessWidget {
       height: Images.aboutImage1Height,
       child: FittedBox(
         fit: BoxFit.scaleDown,
-        child: Placeholder(),
+        child: SizedBox(
+          width: SectionAbout.contentWidth,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Heading(
+                title: 'Why Us',
+                heading: 'We provide full range global logistics solution',
+              ),
+              Space.vS,
+              Text(
+                  'Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.'),
+              Space.vS,
+              Text(
+                  'Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'),
+              Space.vS,
+              IconText(
+                icon: IconType.package,
+                text: 'Delivery on Time',
+              ),
+              Space.vS,
+              IconText(
+                icon: IconType.money,
+                text: 'Optimized Travel Cost',
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

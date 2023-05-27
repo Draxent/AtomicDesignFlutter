@@ -41,6 +41,8 @@ abstract class AppThemeData {
       );
 }
 
+const _fontLeagueSpartan = 'LeagueSpartan';
+
 extension BuildContextExtensionForTextStyle on BuildContext {
   TextStyle get displayLarge => Theme.of(this).textTheme.displayLarge!;
   TextStyle get displayMedium => Theme.of(this).textTheme.displayMedium!;
@@ -61,6 +63,12 @@ extension BuildContextExtensionForTextStyle on BuildContext {
         fontFamily: 'LeagueSpartan',
         fontSize: 20,
         color: AppColors.white,
+      );
+  TextStyle get aboutCounterTextStyle => const TextStyle(
+        package: Style.packageName,
+        fontFamily: _fontLeagueSpartan,
+        fontSize: 20,
+        color: AppColors.headingFont,
       );
 }
 
