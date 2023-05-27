@@ -6,6 +6,7 @@ import './banner.dart';
 import './projects.dart';
 import './services.dart';
 import './testimonials.dart';
+import './why_us.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,6 +23,8 @@ class HomePage extends StatelessWidget {
         SectionProjects(),
         Space.vXXXL,
         SectionTestimonials(),
+        Space.vXL,
+        SectionWhyUs(),
         Space.vXL,
       ],
     );
