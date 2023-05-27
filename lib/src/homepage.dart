@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import './about.dart';
 import './banner.dart';
+import './projects.dart';
 import './services.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,6 +17,8 @@ class HomePage extends StatelessWidget {
         SectionBanner(),
         SectionServices(),
         SectionAbout(),
+        SizedBox(height: 100),
+        SectionProjects(),
         SizedBox(height: 50),
       ],
     );

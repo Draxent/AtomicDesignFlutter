@@ -50,6 +50,7 @@ abstract class Images {
   static Image icon(String name) => image('$_icons/$name$_png');
 
   static const String _projects = '$_root/projects';
+  static const double projectWidth = 321;
   static Image get project1 => image('$_projects/project1$_png');
   static Image get project2 => image('$_projects/project2$_png');
   static Image get project3 => image('$_projects/project3$_png');
